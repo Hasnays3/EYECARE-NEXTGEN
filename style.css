@@ -1,0 +1,245 @@
+
+body { font-family: sans-serif; text-align: center; margin: 0; background: #e8f0fe; }
+header { background-color: #007BFF; color: white; padding: 10px 0; }
+.top-bar, .university-bar { display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.logos img { height: 40px; margin-left: 10px; }
+.university-bar img { height: 40px; margin-right: 10px; }
+main { padding: 20px; }
+video, canvas { width: 100%; max-width: 500px; margin-top: 20px; }
+#timer { font-size: 2em; color: red; margin-top: 20px; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+.slider {
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.navigation button {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  padding: 12px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f3;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  cursor: pointer;
+  border: 2px solid #fec507fb;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  background-color: #fec507fb;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  background-color: #fff8e1;
+}
+
+.info-content {
+  display: none;
+  text-align: left;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.blue-box {
+  width: 50%;
+  background-color: #004aad;
+  padding: 20px;
+  border-radius: 15px;
+  color: rgb(240, 240, 238);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.blue-box h1 {
+  font-size: 28px;
+}
+
+.blue-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.slider-container {
+  width: 45%;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slideNew {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideNew.active {
+  display: block;
+}
+
+.slider-container button {
+  margin-top: 15px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #004aad;
+  color: #e6ebf2;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-container button:hover {
+  background-color: #ffd60a;
+}
+
+.detail-container {
+  padding: 60px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #0077b6;
+  margin-top: 40px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.section-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #ffb703;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+body {
+  background-image: url('BYGROUND.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}

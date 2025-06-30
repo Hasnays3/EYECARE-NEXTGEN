@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman 5 - Pengertian Mata</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007BFF;
+      padding: 10px 0;
+    }
+
+    .university-bar {
+      background-color: #007BFF;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .image-container img,
+    .logos img {
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="university-bar">
+      <div class="image-container">
+        <img src="123er.jpg" alt="Gambar 1">
+        <img src="budayasehat.png" alt="Gambar 2">
+      </div>
+      <div class="logos">
+        <img src="WhatsApp Image 2025-06-27 at 23.53.25_cc0a24fd.png" alt="Kampus Merdeka">
+        <img src="Logo_Kampus_Merdeka_Kemendikbud.png" alt="Tut Wuri Handayani">
+        <img src="Desain_tanpa_judul__2_-removebg-preview.png" alt="logo">
+      </div>
+    </div>
+  </header>
+  
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Saran Penanganan Kelelahan Mata</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;margin:20px;}
+  .saran-container{max-width:600px;margin:auto;}
+  .saran-container h2{text-align:center;margin-bottom:1rem;}
+  .level-btn{padding:10px 20px;margin:5px;border:none;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.2);transition:transform .1s ease-in-out;}
+  .level-btn:hover{transform:scale(1.05);}
+  .level-btn.active{background:#4caf50;color:#fff;}
+  #saran-content{margin-top:1rem;line-height:1.6;}
+  #saran-content ul{padding-left:20px;}
+</style>
+</head>
+<body>
+  <div class="saran-container">
+    <h2>Saran Penanganan</h2>
+    <div>
+      <button class="level-btn" data-level="ringan">Tingkat Ringan</button>
+      <button class="level-btn" data-level="sedang">Tingkat Sedang</button>
+      <button class="level-btn" data-level="berat">Tingkat Berat</button>
+    </div>
+    <div id="saran-content"><!-- saran akan muncul di sini --></div>
+  </div>
+<script>
+  const suggestions = {
+    ringan: [
+      "Istirahat mata secara teratur dengan prinsip 20-20-20.",
+      "Pastikan pencahayaan ruangan cukup terang namun tidak menyilaukan.",
+      "Jaga postur dan jarak saat menggunakan komputer atau gawai.",
+      "Sering-seringlah berkedip untuk menjaga kelembapan mata.",
+      "Kompres mata menggunakan air hangat untuk meredakan ketegangan.",
+      "Lakukan pijat ringan di area sekitar mata."
+    ],
+    sedang: [
+      "Periksakan mata jika disertai sakit kepala, mata merah, atau penglihatan kabur.",
+      "Gunakan tetes mata buatan untuk menjaga kelembapan.",
+      "Sesuaikan kecerahan, kontras, dan ukuran font pada layar.",
+      "Pasang filter anti-silau pada layar.",
+      "Konsultasikan kondisi Anda dengan dokter, termasuk kemungkinan pemberian obat tetes atau terapi."
+    ],
+    berat: [
+      "Segera konsultasikan ke dokter spesialis mata jika keluhan tidak membaik.",
+      "Ikuti terapi khusus (ortoptik atau lainnya) sesuai anjuran dokter.",
+      "Gunakan kacamata khusus bila direkomendasikan.",
+      "Ubah gaya hidup: batasi waktu menatap layar dan terapkan kebiasaan sehat."
+    ]
+  };
+
+  const buttons = document.querySelectorAll('.level-btn');
+  const content = document.getElementById('saran-content');
+
+  function render(level){
+    content.innerHTML = `<ul>${suggestions[level].map(item=>`<li>${item}</li>`).join('')}</ul>`;
+    buttons.forEach(b=>b.classList.toggle('active', b.dataset.level===level));
+  }
+
+  buttons.forEach(btn=>{
+    btn.addEventListener('click', ()=>render(btn.dataset.level));
+  });
+
+  // expose untuk deteksi otomatis (mis. updateSuggestions('sedang'))
+  window.updateSuggestions = render;
+
+  // tampilkan default Tingkat Ringan saat pertama kali
+  render('ringan');
+</script>
+</body>
+</html>
+
+<footer style="margin-top: 50px; text-align: center; font-size: 14px; color: #666;">
+  <hr>
+  <p>©2025 INOVASI<br>
+  Eyetrakremaja@gmail.com<br>
+  🔒Privacy<br>
+  Oleh: Ikhsan Kurniawan, Sudrajat Spondawa, Novalia Bayu, Firdani Afisya, Sofi Larasati</p>
+</footer>
+
+</body>
+</html>

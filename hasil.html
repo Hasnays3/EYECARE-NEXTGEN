@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman 5 - Pengertian Mata</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007BFF;
+      padding: 10px 0;
+    }
+
+    .university-bar {
+      background-color: #007BFF;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .image-container img,
+    .logos img {
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="university-bar">
+      <div class="image-container">
+        <img src="123er.jpg" alt="Gambar 1">
+        <img src="budayasehat.png" alt="Gambar 2">
+      </div>
+      <div class="logos">
+        <img src="WhatsApp Image 2025-06-27 at 23.53.25_cc0a24fd.png" alt="Kampus Merdeka">
+        <img src="Logo_Kampus_Merdeka_Kemendikbud.png" alt="Tut Wuri Handayani">
+        <img src="Desain_tanpa_judul__2_-removebg-preview.png" alt="logo">
+      </div>
+    </div>
+  </header>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Deteksi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  </header>
+  <main>
+    <h2>Hasil Pemeriksaan Mata</h2>
+    <p id="hasil-text"></p>
+    <a href="saran.html" class="button">Lihat Saran</a>
+  </main>
+  <script>
+    const hasil = localStorage.getItem("hasil_deteksi");
+    const output = hasil === "normal"
+      ? "Hasil deteksi menunjukkan kondisi mata Anda normal."
+      : "Hasil deteksi menunjukkan kelelahan pada mata.";
+    document.getElementById("hasil-text").innerText = output;
+  </script>
+</body>
+</html>
+
+<footer style="margin-top: 50px; text-align: center; font-size: 14px; color: #666;">
+  <hr>
+  <p>©2025 INOVASI<br>
+  Eyetrakremaja@gmail.com<br>
+  🔒Privacy<br>
+  Oleh: Ikhsan Kurniawan, Sudrajat Spondawa, Novalia Bayu, Firdani Afisya, Sofi Larasati</p>
+</footer>
+
+</body>
+</html>
