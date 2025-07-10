@@ -75,3 +75,4 @@ const interval = setInterval(() => {
     window.location.href = "hasil.html";
   }
 }, 1000);
+

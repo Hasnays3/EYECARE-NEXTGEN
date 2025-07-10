@@ -2,8 +2,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
+<style>
+  /* Tambahkan ini di dalam <head> */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  body {
+    padding-top: 10px; /* Sesuaikan jika diperlukan */
+  }
+</style>
+
   <meta charset="UTF-8">
-  <title>Halaman 5 - Pengertian Mata</title>
+  <title>Halaman Utama- Kelelahan Mata</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -63,8 +77,8 @@
   </header>
   <main>
 <html>
-    <h1 style="color: #004aad;">EYE TRACK</h1>
-    <h2>DETEKSI KELELAHAN PADA REMAJA</h2>
+    <h1 style="color: #02449a;">EYECARE NEXTGEN</h1>
+    <h2 style="color: #3084f2;"> DETEKSI KELELAHAN MATA PADA REMAJA</h2>
     <p style="text-align: center;">
       Pemeriksaan kelelahan mata penting dilakukan secara rutin untuk mencegah gangguan penglihatan.<br>
       Remaja sering terpapar layar digital sehingga berisiko mengalami kelelahan mata digital.<br>
@@ -107,8 +121,82 @@
     </p>
   </div>
 
-   <a href="deteksi.html" class="button">Next</a>
 
+
+<!-- Tombol Next dengan disabled default -->
+<a href="deteksi.html" id="nextBtn" class="button" disabled>Next</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const consentCheckbox = document.getElementById('privacyConsent');
+        const nextButton = document.getElementById('nextBtn');
+
+        // 1. Aktifkan/nonaktifkan tombol berdasarkan checkbox
+        consentCheckbox.addEventListener('change', function() {
+            nextButton.disabled = !this.checked;
+        });
+
+        // 2. Validasi saat tombol diklik (opsional, untuk keamanan ekstra)
+        nextButton.addEventListener('click', function(event) {
+            if (!consentCheckbox.checked) {
+                event.preventDefault(); // Hentikan navigasi jika belum dicentang
+                alert('Anda harus menyetujui ketentuan terlebih dahulu!');
+            }
+            // Jika sudah dicentang, biarkan <a href> bekerja secara normal
+        });
+    });
+
+</script>
+<div style="
+  background: #FFF3E0;
+  border-left: 3px solid #FFA000;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  font-size: 13px;
+">
+  <!-- Icon dan Teks Peringatan -->
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <span style="color: #E65100; margin-right: 8px;">⚠️</span>
+    <span>
+      Kamera tidak menyimpan gambar. Data hanya digunakan untuk analisa kelelahan mata.
+    </span>
+  </div>
+  
+  <!-- Garis Pemisah -->
+  <div style="border-top: 1px dashed #FFC107; margin: 10px 0;"></div>
+  
+  <!-- Tombol Aksi -->
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <input type="checkbox" id="privacyConsent" style="margin-right: 8px;">
+      <label for="privacyConsent" style="color: #5F6368;">Saya setuju</label>
+    </div>
+    
+    <div>
+      <a href="privacy.html" target="_blank" style="
+        color: #1565C0;
+        text-decoration: none;
+        margin-right: 15px;
+      ">
+        Baca Ketentuan
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  // Aktifkan tombol saat checkbox dicentang
+  document.getElementById('privacyConsent').addEventListener('change', function() {
+    document.getElementById('continueBtn').disabled = !this.checked;
+  });
+</script>
+<head>
+  <link rel="stylesheet" href="privacy.css">
+  <!-- Tambahkan font jika mau -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -148,17 +236,133 @@
     </div>
   </div>
 
-  <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tentang Mata</title>
-  <link rel="stylesheet" href="style.css"/>
+
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Utama- Kelelahan Mata</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS yang sudah ada */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007BFF;
+      padding: 10px 0;
+    }
+
+    .university-bar {
+      background-color: #007BFF;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .image-container img,
+    .logos img {
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* CSS baru untuk layout */
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .blue-box {
+      flex: 1;
+      min-width: 300px;
+      background: #007BFF;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .slider-container {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .slider-container button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 30px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .slider-container button:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    /* CSS untuk slider */
+    .sliderNew {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .slideNew {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+      opacity: 0;
+    }
+
+    .slideNew.active {
+      opacity: 1;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+      
+      .blue-box, .slider-container {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <div class="section">
     <div class="blue-box">
-      <h1>APA SIH YANG SEBENARNYA KALIHAN KETAHUI TENTANG MATA??</h1>
+      <h1>APA SIH YANG SEBENARNYA KALIAN KETAHUI TENTANG MATA??</h1>
       <p>
         Organ kecil ini ternyata menyimpan banyak keajaiban lho! Mata bukan hanya sekadar alat untuk melihat, 
         tetapi juga merupakan sistem biologis yang sangat kompleks dan menakjubkan. Yuk, kita baca dan simak 
@@ -166,34 +370,44 @@
         yang bisa memengaruhi fungsinya.
       </p>
     </div>
+    
     <div class="slider-container">
-      <div class="slider" id="sliderNew">
+      <div class="sliderNew" id="sliderNew">
         <img src="satu.jpg" class="slideNew active" />
         <img src="dua.jpg" class="slideNew" />
         <img src="tiga.jpg" class="slideNew" />
       </div>
       <button onclick="goToDetail()">DETAIL</button>
+
     </div>
-
   </div>
-  <footer style="margin-top: 50px; text-align: center; font-size: 14px; color: #666;">
-  <hr>
-  <p style="text-align: center;">
-  ©2025 INOVASI<br>
-  Eyetrakremaja@gmail.com<br>
-  🔒Privacy<br>
-  Oleh: Ikhsan Kurniawan, Sudrajat Spondawa, Novalia Bayu, Firdani Afisya, Sofi Larasati</p>
+
+  <footer style="
+    margin: 50px auto 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+">
+  <hr style="
+      width: 80%;
+      max-width: 400px;
+      border: 0;
+      height: 1px;
+      background: #666;
+      margin: 0 auto 15px;
+  ">
+  <div style="
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+  ">
+    ©2025 INOVASI<br>
+    Eyetrakremaja@gmail.com<br>
+    🔒Privacy<br>
+    Oleh: Ikhsan Kurniawan, Sudrajat Spondawa, Novalia Bayu, Firdani Afisya, Sofi Larasati
+  </div>
 </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-<script>
-  function toggleContent(id) {
-    var el = document.getElementById(id);
-    el.style.display = el.style.display === 'none' ? 'block' : 'none';
-  }
-</script>
-
-

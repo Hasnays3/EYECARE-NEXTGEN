@@ -1,9 +1,15 @@
 
 body { font-family: sans-serif; text-align: center; margin: 0; background: #e8f0fe; }
 header { background-color: #007BFF; color: white; padding: 10px 0; }
-.top-bar, .university-bar { display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-.logos img { height: 40px; margin-left: 10px; }
-.university-bar img { height: 40px; margin-right: 10px; }
+.top-bar, .university-bar logo {
+  width: 200px; /* Atur sesuai ukuran yang diinginkan */
+  height: auto; /* Untuk menjaga rasio */ display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.logos img logo {
+  width: 200px; /* Atur sesuai ukuran yang diinginkan */
+  height: auto; /* Untuk menjaga rasio */}
+.university-bar img logo {
+  width: 200px; /* Atur sesuai ukuran yang diinginkan */
+  height: auto; /* Untuk menjaga rasio */ }
 main { padding: 20px; }
 video, canvas { width: 100%; max-width: 500px; margin-top: 20px; }
 #timer { font-size: 2em; color: red; margin-top: 20px; }
@@ -180,7 +186,7 @@ body {
   padding: 12px 30px;
   border: none;
   border-radius: 25px;
-  background-color: #004aad;
+  background-color: #007BFF;
   color: #e6ebf2;
   font-weight: bold;
   font-size: 16px;
@@ -243,3 +249,337 @@ body {
   background-attachment: fixed;  
   background-size: cover;
 }
+
+/* Gaya Dasar Container Saran */
+.saran-container {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007BFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+}
+
+/* Header Saran */
+.saran-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.saran-icon {
+    font-size: 28px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f8ff;
+}
+
+.saran-header h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Konten Saran */
+.saran-content {
+    padding: 0 10px;
+}
+
+.saran-content p {
+    margin: 0;
+    color: #34495e;
+    font-size: 16px;
+}
+
+/* Gaya khusus untuk list bernomor */
+.saran-content ol {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.saran-content ol li {
+    margin-bottom: 10px;
+}
+
+/* Gaya khusus untuk list bullet */
+.saran-content ul {
+    padding-left: 20px;
+    margin: 15px 0;
+    list-style-type: none;
+}
+
+.saran-content ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.saran-content ul li:before {
+    content: "•";
+    color: #007BFF;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Warna berbeda berdasarkan tingkat keparahan */
+.saran-container[data-level="Normal"] {
+    border-left-color: #28a745;
+}
+
+.saran-container[data-level="Normal"] .saran-icon {
+    color: #28a745;
+    background-color: #e8f5e9;
+}
+
+.saran-container[data-level="Sedikit Kelelahan"] {
+    border-left-color: #ffc107;
+}
+
+.saran-container[data-level="Sedikit Kelelahan"] .saran-icon {
+    color: #ffc107;
+    background-color: #fff8e1;
+}
+
+.saran-container[data-level="Sedang Kelelahan"] {
+    border-left-color: #fd7e14;
+}
+
+.saran-container[data-level="Sedang Kelelahan"] .saran-icon {
+    color: #fd7e14;
+    background-color: #fff3e0;
+}
+
+.saran-container[data-level="Berat"] {
+    border-left-color: #dc3545;
+}
+
+.saran-container[data-level="Berat"] .saran-icon {
+    color: #dc3545;
+    background-color: #ffebee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .saran-container {
+        padding: 20px;
+        margin: 15px;
+    }
+    
+    .saran-header h2 {
+        font-size: 20px;
+    }
+    
+    .saran-content p {
+        font-size: 15px;
+    }
+}
+
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF 0%, #007BFF 100%);
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.university-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h2 {
+    color: #0769cb;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+#hasil-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007BFF;
+}
+
+.button {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #007BFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(25, 135, 253, 0.3);
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #031d37;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: rgba(18, 21, 84, 0.2);
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .university-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animasi hasil */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#hasil-text {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Warna berbeda berdasarkan hasil */
+#hasil-text[data-result="normal"] {
+    border-left-color: #28a745;
+    background: #e8f5e9;
+}
+
+#hasil-text[data-result="lelah"] {
+    border-left-color: #ffc107;
+    background: #fff8e1;
+}
+
+/* Style dasar untuk notifikasi keamanan */
+.security-notice {
+  background: #fff8e6;
+  border-left: 5px solid #ff9800;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+/* Animasi untuk menarik perhatian */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.security-notice {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Style untuk checkbox persetujuan */
+.consent-box {
+  transition: all 0.3s;
+}
+.consent-box:hover {
+  background: #e1f5fe !important;
+}
+
+
+.button:disabled {
+    background-color: #cccccc !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Gaya khusus untuk halaman deteksi (deteksi.html) */
+.detection-container {
+    display: flex;           /* Membuat kamera & hasil berdampingan */
+    gap: 20px;              /* Jarak antara kamera dan hasil */
+    margin-bottom: 20px;    /* Jarak dari timer */
+}
+
+.video-box, .result-box {
+    flex: 1;                /* Membagi ruang sama rata */
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Pastikan video dan canvas responsif */
+.input_video, .output_canvas {
+    width: 100%;
+    border-radius: 8px;
+    background: black;
+}
+
+/* Timer tetap di bawah */
+#timer {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    margin-top: 10px;
+}
+
