@@ -1,47 +1,34 @@
+# EYECARE NEXTGEN
 
-# Eye-Track 👁️
+**EYECARE NEXTGEN** adalah proyek web inovatif yang dirancang untuk mendukung perawatan mata remaja melalui deteksi dini dan edukasi digital.
 
-**Eye-Track** adalah sebuah aplikasi web sederhana yang bertujuan untuk mendeteksi kondisi mata berbasis antarmuka visual. Proyek ini dapat digunakan untuk edukasi, pemeriksaan awal visual, atau sebagai komponen dari sistem kesehatan berbasis web.
+## 📌 Fitur Utama
 
-## 🚀 Fitur
+- Deteksi visual berbasis web
+- UI sederhana dan mudah digunakan
+- Media pendukung berupa gambar dan ilustrasi
+- Konten edukatif seputar kesehatan mata
 
-- Antarmuka berbasis web, mudah digunakan di browser.
-- Interaktif dengan dukungan file gambar sebagai input.
-- Visualisasi kondisi mata dengan gambar representatif.
-- Didukung oleh JavaScript untuk logika deteksi dasar.
-
-## 📂 Struktur Proyek
+## 📁 Struktur Proyek
 
 ```
-Eye-Track/
-├── deteksi.html          # Halaman utama antarmuka
-├── deteksi.js            # Skrip utama untuk deteksi visual
-├── *.jpg / *.png / *.avif # Berbagai aset gambar
+EYECARE NEXTGEN/
+├── deteksi.html          # Halaman utama web
+├── deteksi.js            # Logika interaktif (JavaScript)
+├── *.jpg, *.png, *.avif  # Gambar pendukung dan ilustrasi
 ```
 
-## 🧑‍💻 Cara Menjalankan Secara Lokal
+## 🚀 Cara Menjalankan
 
-1. **Clone repository ini** (setelah Anda unggah ke GitHub):
-    ```bash
-    git clone https://github.com/username/Eye-Track.git
-    cd Eye-Track
-    ```
+1. Download atau clone repositori ini.
+2. Buka file `deteksi.html` langsung di browser Anda (tidak perlu server khusus).
+3. Pastikan semua file gambar dan JS berada dalam folder yang sama agar halaman tampil sempurna.
 
-2. **Buka `deteksi.html` di browser**
-    - Cukup klik dua kali pada file `deteksi.html`, atau
-    - Jalankan server lokal dengan Python:
-      ```bash
-      python -m http.server
-      ```
-      lalu akses di `http://localhost:8000`
+## ⚠️ Catatan
 
-## 📝 Lisensi
+- Proyek ini masih bersifat statis (HTML + JS saja).
+- Cocok untuk demo, edukasi, atau pengembangan awal aplikasi berbasis web.
 
-Lisensi untuk proyek ini belum ditentukan. Silakan sesuaikan di bagian ini (misalnya MIT, GPL, dll.).
+## 📄 Lisensi
 
----
-
-## 📌 Catatan Tambahan
-
-- Pastikan gambar yang digunakan berada di direktori yang sama agar antarmuka dapat menampilkannya dengan benar.
-- Proyek ini cocok untuk digunakan dalam penyuluhan atau simulasi deteksi gangguan mata ringan.
+Lisensi: [MIT License](https://opensource.org/licenses/MIT) *(Opsional - sesuaikan sesuai kebutuhan)*

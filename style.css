@@ -1,15 +1,19 @@
 
 body { font-family: sans-serif; text-align: center; margin: 0; background: #e8f0fe; }
-header { background-color: #007BFF; color: white; padding: 10px 0; }
+header { background-color: #007BFF; color: white; padding: 80px 0; }
 .top-bar, .university-bar logo {
-  width: 200px; /* Atur sesuai ukuran yang diinginkan */
+  width: 900px; /* Atur sesuai ukuran yang diinginkan */
   height: auto; /* Untuk menjaga rasio */ display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
 .logos img logo {
-  width: 200px; /* Atur sesuai ukuran yang diinginkan */
+  width: 900px; /* Atur sesuai ukuran yang diinginkan */
   height: auto; /* Untuk menjaga rasio */}
-.university-bar img logo {
-  width: 200px; /* Atur sesuai ukuran yang diinginkan */
-  height: auto; /* Untuk menjaga rasio */ }
+
+.university-bar img {
+  max-height: 80px;
+  width: auto;
+}
+
+
 main { padding: 20px; }
 video, canvas { width: 100%; max-width: 500px; margin-top: 20px; }
 #timer { font-size: 2em; color: red; margin-top: 20px; }
